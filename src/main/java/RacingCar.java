@@ -12,6 +12,8 @@ public class RacingCar {
 		}
 	}
 
+	public RacingCar() {}
+
 	public int getRacingMaxDistance() {
 		int max = 0;
 		for (Car car : cars) {
@@ -31,5 +33,9 @@ public class RacingCar {
 
 	public List<Car> getCars() {
 		return cars;
+	}
+
+	public void setCars(ArrayList<Car> cars) {
+		this.cars = cars;
 	}
 }

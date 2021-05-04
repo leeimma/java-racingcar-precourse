@@ -25,6 +25,10 @@ public class Car {
 		return result;
 	}
 
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
+
 	public void racing(int random) {
 		if (random >= MOVE_NUM) {
 			this.distance++;
