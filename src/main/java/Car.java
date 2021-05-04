@@ -4,10 +4,10 @@ public class Car {
 
 	private String name;
 	private int distance = 0;
-	
-	public static final int MOVE_NUM = 4;
-	public static final int MOVE_MAX_NUM = 9;
-	public static final int MOVE_MIN_NUM = 1;
+
+	private static final int MOVE_NUM = 4;
+	private static final int MOVE_MAX_NUM = 9;
+	private static final int MOVE_MIN_NUM = 1;
 
 	public Car(String name) {
 		this.name = name;

@@ -16,11 +16,11 @@ public class UserTest {
 	@DisplayName("사용자 입력 체크")
 	void validationCheck() {
 		// 자동차 이름 체크
-		assertThat(user.validationCheck("name1,name2", user.CAR_NAME_REGEX)).isFalse();
-		assertThat(user.validationCheck("name1,nameError2", user.CAR_NAME_REGEX)).isTrue();
+		assertThat(user.validationCheck("name1,name2", Message.CAR_NAME_REGEX)).isFalse();
+		assertThat(user.validationCheck("name1,nameError2", Message.CAR_NAME_REGEX)).isTrue();
 		// 횟수 체크
-		assertThat(user.validationCheck("123", user.CAR_RACING_COUNT_REGEX)).isFalse();
-		assertThat(user.validationCheck("1we3", user.CAR_RACING_COUNT_REGEX)).isTrue();
+		assertThat(user.validationCheck("123", Message.CAR_RACING_COUNT_REGEX)).isFalse();
+		assertThat(user.validationCheck("1we3", Message.CAR_RACING_COUNT_REGEX)).isTrue();
 	}
 
 	@Test
